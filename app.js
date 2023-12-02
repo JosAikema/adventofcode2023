@@ -36,7 +36,7 @@ const part2 = (check_value) => {
 }
 
 
-//part1(142)
-part2(281)
+part1(8)
+part2(2286)
 
 
