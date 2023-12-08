@@ -2,7 +2,7 @@ const dayjs = require('dayjs')
 const utils = require('./lib/utils');
 
 let day = dayjs().date();
-day = 5
+//day = 5
 console.log('Day: ', day)
 let noSplit = true
 
@@ -38,7 +38,7 @@ const part2 = (check_value) => {
 }
 
 
-part1(35)
-part2(46)
+//part1(2)
+part2(6)
 
 
