@@ -2,9 +2,9 @@ const dayjs = require('dayjs')
 const utils = require('./lib/utils');
 
 let day = dayjs().date();
-//day = 5
+//day = 7
 console.log('Day: ', day)
-let noSplit = true
+let noSplit = false
 
 let challenge = require('./' + day + '/day' + day + '.js');
 
@@ -38,7 +38,7 @@ const part2 = (check_value) => {
 }
 
 
-//part1(2)
-part2(6)
+part1(114)
+part2(2)
 
 
