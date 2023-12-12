@@ -8,8 +8,9 @@ let noSplit = false
 
 let challenge = require('./' + day + '/day' + day + '.js');
 
-const part1 = (check_value) => {
+const part1 = () => {
     console.log('Part 1')
+    let check_value = challenge.test_part1
     let test_result = challenge.solve_part1(utils.processInput('./' + day + '/test.txt', noSplit));
     
 
@@ -23,8 +24,9 @@ const part1 = (check_value) => {
     }
 }
 
-const part2 = (check_value) => {
+const part2 = () => {
     console.log('Part 2')
+    let check_value = challenge.test_part2
     let test_result = challenge.solve_part2(utils.processInput('./' + day + '/test.txt', noSplit));
 
     if (test_result === check_value) {
@@ -38,7 +40,7 @@ const part2 = (check_value) => {
 }
 
 
-part1(114)
-part2(2)
+part1()
+part2()
 
 
