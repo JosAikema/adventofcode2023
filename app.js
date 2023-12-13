@@ -2,7 +2,7 @@ const dayjs = require('dayjs')
 const utils = require('./lib/utils');
 
 let day = dayjs().date();
-//day = 11
+day = 11
 console.log('Day: ', day)
 
 
