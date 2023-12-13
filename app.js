@@ -2,14 +2,15 @@ const dayjs = require('dayjs')
 const utils = require('./lib/utils');
 
 let day = dayjs().date();
-day = 10
+//day = 11
 console.log('Day: ', day)
-let noSplit = false
+
 
 let challenge = require('./' + day + '/day' + day + '.js');
 
 const part1 = () => {
     console.log('Part 1')
+    let noSplit = challenge.noSplit || false
     let check_value = challenge.test_part1
     let test_result = challenge.solve_part1(utils.processInput('./' + day + '/test.txt', noSplit));
     
@@ -26,6 +27,7 @@ const part1 = () => {
 
 const part2 = () => {
     console.log('Part 2')
+    let noSplit = challenge.noSplit || false
     let check_value = challenge.test_part2
     let test_result = challenge.solve_part2(utils.processInput('./' + day + '/test.txt', noSplit));
 
@@ -42,6 +44,4 @@ const part2 = () => {
 
 part1()
 part2()
-
-
 
